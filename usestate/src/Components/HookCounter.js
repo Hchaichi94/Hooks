@@ -1,0 +1,16 @@
+import React, { useState } from 'react'
+
+
+function HookCounter() {
+    //const [state, stateUpdaterFunction] = useState(initialStateValue)
+    const [count, setCount] = useState(0)
+
+    return (
+        <div>
+            <button onClick={() => setCount(count + 1)}>Count Hook {count}</button>
+        </div>
+    )
+}
+
+
+export default HookCounter
